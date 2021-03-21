@@ -7,10 +7,12 @@ public class PrintFromAmtoPM {
                 System.out.println(i + ":00" + " Midnight");
             else if (i < 12)
                 System.out.println(i + ":00" + " AM");
-            else if (i == 12)
-                System.out.println("Noon");
-            else if (i > 12)
-                System.out.println(i + ":00" + " PM");
+        }
+        for (int x = 0; x < 12; x++) {
+            if (x == 0)
+                System.out.println("12:00 Noon");
+            else System.out.println(x + ":00" + " PM");
+
         }
     }
 }
