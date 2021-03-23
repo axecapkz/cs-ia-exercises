@@ -1,10 +1,14 @@
 public class FivePerLine {
     public static void main(String[] args) {
-        for (int i = 1000; i <= 2000; i++) {
-            System.out.print(i + " ");
-            if ((i + 1) % 5 == 0)
-                System.out.println();
+        int num1 = 1000;
+        int num2 = 1500;
+        int counter = 0;
+        for (int i = 0; i < 250; i++) {
+            System.out.println(num1 + " " + (num1 + 1) + "   " + (num2) + " " + (num2 + 1));
+            num1 = num1 + 2;
+            num2 = num2 + 2;
         }
+        System.out.println("            " + 2000);
 
     }
 }
